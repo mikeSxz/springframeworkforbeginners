@@ -12,8 +12,13 @@
 	
 	<bean id="calc" class="com.example.pkg.Calculator">
 		<constructor-arg index="0" value="100" />
-		<constructor-arg index="1" value="5" />
-		
+		<constructor-arg index="1" value="5" />		
+	</bean>
+	
+	<bean id="animal" class="com.example.pkg.Animal">
+		<constructor-arg index="0" type="double" value="100.2" />
+		<constructor-arg index="1" type="float" value="100.54" />
+		<constructor-arg index="2" type="java.lang.String" value="Lycan" />		
 	</bean>
 
 </beans>
