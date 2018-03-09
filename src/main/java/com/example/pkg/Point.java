@@ -4,9 +4,9 @@ public class Point {
 	private int x;
 	private int y;
 	
-	public Point(String message, int number){
-		System.out.println(message);
-		System.out.println(number);
+	public Point(double myDouble, float myFloat){
+		System.out.println(myDouble);
+		System.out.println(myFloat);
 	}
 	
 	public int getX() {
