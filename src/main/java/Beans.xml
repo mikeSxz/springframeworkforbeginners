@@ -4,6 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="Point10" class="com.example.pkg.Point">
+		<constructor-arg value="hello" />
+		<constructor-arg value="2000" />
 		<property name="x" value="56"></property>
 		<property name="y" value="76"></property>
 	</bean>
