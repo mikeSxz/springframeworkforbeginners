@@ -7,9 +7,15 @@ public class ApplicationStart {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Beans.xml");
-		Point p = (Point)applicationContext.getBean("Point10");
-		System.out.println(p.getX());
-		System.out.println(p.getY());
+		Calculator calc = (Calculator)applicationContext.getBean("calc");
+		
+		System.out.println(calc.add());
+		System.out.println(calc.divide());
+		System.out.println(calc.multiply());
+		System.out.println(calc.substract());
+		
+		
+		
 	}
 
 }

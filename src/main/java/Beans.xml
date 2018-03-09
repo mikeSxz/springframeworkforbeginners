@@ -9,5 +9,11 @@
 		<property name="x" value="56"></property>
 		<property name="y" value="76"></property>
 	</bean>
+	
+	<bean id="calc" class="com.example.pkg.Calculator">
+		<constructor-arg index="0" value="100" />
+		<constructor-arg index="1" value="5" />
+		
+	</bean>
 
 </beans>
