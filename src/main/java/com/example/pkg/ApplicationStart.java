@@ -7,12 +7,9 @@ public class ApplicationStart {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Beans.xml");
-		Calculator calc = (Calculator)applicationContext.getBean("calc");
+		Animal animal = (Animal)applicationContext.getBean("animal");
 		
-		System.out.println(calc.add());
-		System.out.println(calc.divide());
-		System.out.println(calc.multiply());
-		System.out.println(calc.substract());
+		System.out.println(animal);
 		
 		
 		

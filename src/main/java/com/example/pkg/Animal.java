@@ -5,21 +5,28 @@ public class Animal {
 	private double weight;
 	private float height;
 	private String specieName;
+	private Color color;
 	
 	
 	
-	public Animal() {
-		
-	}
-
-	public Animal(double weight, float height, String specieName) {
-		
+	public Animal(double weight, float height, String specieName, Color color) {
 		this.weight = weight;
 		this.height = height;
 		this.specieName = specieName;
-		
-		System.out.println("this animal have "+ weight + " of weight, "+ height+" of height, and it's species name is: "+specieName);
+		this.color = color;
 	}
+
+	public Color getColor() {
+		return color;
+	}
+
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+	public Animal() {
+		
+	}	
 
 	public double getWeight() {
 		return weight;
@@ -43,6 +50,12 @@ public class Animal {
 
 	public void setSpecieName(String specieName) {
 		this.specieName = specieName;
+	}
+
+	@Override
+	public String toString() {
+		return "Animal [weight=" + weight + ", height=" + height + ", specieName=" + specieName + ", color=" + color
+				+ "]";
 	}
 	
 	
