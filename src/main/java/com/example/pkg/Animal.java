@@ -1,20 +1,38 @@
 package com.example.pkg;
 
 public class Animal {
-	
+
 	private double weight;
 	private float height;
 	private String specieName;
 	private Color color;
+	private Size size;
+
+	public Animal() {
+
+	}
 	
-	
-	
-	public Animal(double weight, float height, String specieName, Color color) {
+
+	public Animal(double weight, float height, String specieName, Color color, Size size) {
 		this.weight = weight;
 		this.height = height;
 		this.specieName = specieName;
 		this.color = color;
+		this.size = size;
 	}
+
+
+	public Size getSize() {
+		return size;
+	}
+
+	public void setSize(Size size) {
+		this.size = size;
+	}
+
+
+
+
 
 	public Color getColor() {
 		return color;
@@ -23,10 +41,6 @@ public class Animal {
 	public void setColor(Color color) {
 		this.color = color;
 	}
-
-	public Animal() {
-		
-	}	
 
 	public double getWeight() {
 		return weight;
@@ -52,14 +66,18 @@ public class Animal {
 		this.specieName = specieName;
 	}
 
+
+
+
+
 	@Override
 	public String toString() {
 		return "Animal [weight=" + weight + ", height=" + height + ", specieName=" + specieName + ", color=" + color
-				+ "]";
+				+ ", size=" + size + "]";
 	}
+
 	
-	
-	
+
 	
 
 }
