@@ -17,10 +17,10 @@
 		</property>
 
 		<property name="names">
-			<list>
-				<value>zebra</value>
-				<value>horse in pijama</value>
-			</list>
+			<map>
+				<entry key="1" value="zebra"></entry>
+				<entry key="2" value="horse in pijama"></entry>
+			</map>
 		</property>
 	</bean>
 

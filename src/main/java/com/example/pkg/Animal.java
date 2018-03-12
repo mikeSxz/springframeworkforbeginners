@@ -1,6 +1,6 @@
 package com.example.pkg;
 
-import java.util.Set;
+import java.util.Map;
 
 public class Animal {
 
@@ -9,7 +9,7 @@ public class Animal {
 	private String specieName;
 	private Color color;
 	private Size size;
-	private Set<String> names;
+	private Map<Integer,String> names;
 
 	public Animal() {
 
@@ -17,7 +17,7 @@ public class Animal {
 
 	
 
-	public Animal(double weight, float height, String specieName, Color color, Size size, Set<String> names) {
+	public Animal(double weight, float height, String specieName, Color color, Size size, Map<Integer,String> names) {
 		this.weight = weight;
 		this.height = height;
 		this.specieName = specieName;
@@ -28,11 +28,11 @@ public class Animal {
 
 
 
-	public Set<String> getNames() {
+	public Map<Integer,String> getNames() {
 		return names;
 	}
 
-	public void setNames(Set<String> names) {
+	public void setNames(Map<Integer,String> names) {
 		this.names = names;
 	}
 
