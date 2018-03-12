@@ -7,18 +7,32 @@ public class Animal {
 	private String specieName;
 	private Color color;
 	private Size size;
+	private String validator;
 
 	public Animal() {
 
 	}
 	
 
-	public Animal(double weight, float height, String specieName, Color color, Size size) {
+
+	public Animal(double weight, float height, String specieName, Color color, Size size, String validator) {
 		this.weight = weight;
 		this.height = height;
 		this.specieName = specieName;
 		this.color = color;
 		this.size = size;
+		this.validator = validator;
+	}
+
+
+
+	public String getValidator() {
+		return validator;
+	}
+
+
+	public void setValidator(String validator) {
+		this.validator = validator;
 	}
 
 

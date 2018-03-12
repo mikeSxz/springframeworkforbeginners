@@ -7,9 +7,9 @@ public class ApplicationStart {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Beans.xml");
-		Animal animal = (Animal)applicationContext.getBean("animal");
+		Animal animal = (Animal)applicationContext.getBean("zebra");
 		
-		System.out.println(animal);
+		System.out.println(animal.getValidator());
 		
 		
 		
