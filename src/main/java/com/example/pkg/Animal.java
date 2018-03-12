@@ -1,6 +1,6 @@
 package com.example.pkg;
 
-import java.util.List;
+import java.util.Set;
 
 public class Animal {
 
@@ -9,7 +9,7 @@ public class Animal {
 	private String specieName;
 	private Color color;
 	private Size size;
-	private List<String> names;
+	private Set<String> names;
 
 	public Animal() {
 
@@ -17,7 +17,7 @@ public class Animal {
 
 	
 
-	public Animal(double weight, float height, String specieName, Color color, Size size, List<String> names) {
+	public Animal(double weight, float height, String specieName, Color color, Size size, Set<String> names) {
 		this.weight = weight;
 		this.height = height;
 		this.specieName = specieName;
@@ -28,11 +28,11 @@ public class Animal {
 
 
 
-	public List<String> getNames() {
+	public Set<String> getNames() {
 		return names;
 	}
 
-	public void setNames(List<String> names) {
+	public void setNames(Set<String> names) {
 		this.names = names;
 	}
 
