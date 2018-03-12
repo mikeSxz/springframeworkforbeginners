@@ -9,7 +9,9 @@ public class ApplicationStart {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Beans.xml");
 		Animal animal = (Animal)applicationContext.getBean("zebra");
 		
-		System.out.println(animal.getValidator());
+		BeanValidator beanValidator= (BeanValidator)applicationContext.getBean("validatorBean");
+		
+		System.out.println(beanValidator);
 		
 		
 		
