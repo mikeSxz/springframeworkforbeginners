@@ -1,5 +1,7 @@
 package com.example.pkg;
 
+import java.util.List;
+
 public class Animal {
 
 	private double weight;
@@ -7,21 +9,31 @@ public class Animal {
 	private String specieName;
 	private Color color;
 	private Size size;
-	
+	private List<String> names;
 
 	public Animal() {
 
 	}
+
 	
 
-
-	public Animal(double weight, float height, String specieName, Color color, Size size) {
+	public Animal(double weight, float height, String specieName, Color color, Size size, List<String> names) {
 		this.weight = weight;
 		this.height = height;
 		this.specieName = specieName;
 		this.color = color;
 		this.size = size;
-		
+		this.names = names;
+	}
+
+
+
+	public List<String> getNames() {
+		return names;
+	}
+
+	public void setNames(List<String> names) {
+		this.names = names;
 	}
 
 	public Size getSize() {
@@ -31,10 +43,6 @@ public class Animal {
 	public void setSize(Size size) {
 		this.size = size;
 	}
-
-
-
-
 
 	public Color getColor() {
 		return color;
@@ -70,15 +78,11 @@ public class Animal {
 
 
 
-
-
 	@Override
 	public String toString() {
 		return "Animal [weight=" + weight + ", height=" + height + ", specieName=" + specieName + ", color=" + color
-				+ ", size=" + size + "]";
+				+ ", size=" + size + ", names=" + names + "]";
 	}
-
-	
 
 	
 
