@@ -7,11 +7,11 @@ public class ApplicationStart {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Beans.xml");
-		Animal animal = (Animal)applicationContext.getBean("zebra");
+		Animal animal = (Animal)applicationContext.getBean("bobby");
 		
-		BeanValidator beanValidator= (BeanValidator)applicationContext.getBean("validatorBean");
+		System.out.println(animal);
 		
-		System.out.println(beanValidator);
+		
 		
 		
 		
